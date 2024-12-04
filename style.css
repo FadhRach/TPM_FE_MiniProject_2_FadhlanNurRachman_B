@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #EEEEF0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    border-radius: 10px;
+    padding: 40px 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+p {
+    font-size: 14px;
+    color: #7B7B7B;
+    margin-bottom: 30px;
+}
+
+.create {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#create {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-right: 10px;
+    outline: none;
+    box-shadow: none;
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    border: 1px solid #ccc;
+    box-shadow: none;
+}
+
+
+button {
+    background-color: #5016FF;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    cursor: default;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7E53FF;
+}
+
+.todo-list{
+    background-color: #EEEEF0;
+    border-radius: 8px;
+    height: auto;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+/* Styling for tasks */
+ul {
+    list-style: none;
+    padding: 15px;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    position: relative;
+    padding: 5px;
+}
+
+ul li .task-checkbox {
+    margin-right: 5px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    border: 1px solid #DEDEDE;
+    background-color: #ffffff;
+    outline: none;
+}
+
+ul li .task-checkbox:checked {
+    background-color: #5016FF;
+    border-color: #5016FF;
+}
+
+ul li .task-label {
+    width: 300px;
+    font-size: 16px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+
+ul li .task-delete-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
